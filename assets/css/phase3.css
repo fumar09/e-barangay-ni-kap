@@ -1,0 +1,932 @@
+/* Phase 3: Barangay Records Module CSS */
+/* e-Barangay ni Kap */
+/* Created: July 21, 2025 */
+
+/* ===== RESIDENT MANAGEMENT STYLES ===== */
+
+.resident-management {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-navy) 100%);
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.resident-header {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.resident-header-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.resident-header h1 {
+    color: var(--dark-navy);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.resident-header p {
+    color: var(--medium-gray);
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.resident-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.resident-stat-card {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resident-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.resident-stat-icon {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-navy));
+    border-radius: 50%;
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 80px;
+    margin-bottom: 1rem;
+    width: 80px;
+}
+
+.resident-stat-number {
+    color: var(--dark-navy);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.resident-stat-label {
+    color: var(--medium-gray);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.resident-actions {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.resident-actions h3 {
+    color: var(--dark-navy);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.resident-action-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.resident-action-btn {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-navy));
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resident-action-btn:hover {
+    color: var(--white);
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(3, 89, 182, 0.3);
+}
+
+.resident-action-btn i {
+    margin-right: 0.5rem;
+}
+
+/* ===== RESIDENT FORM STYLES ===== */
+
+.resident-form-container {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.resident-form-header {
+    border-bottom: 2px solid var(--light-gray);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.resident-form-header h3 {
+    color: var(--dark-navy);
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.resident-form-header p {
+    color: var(--medium-gray);
+    margin-bottom: 0;
+}
+
+.resident-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    color: var(--dark-navy);
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background: var(--light-gray);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: var(--dark-navy);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(3, 89, 182, 0.1);
+    outline: none;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.btn-save {
+    background: linear-gradient(135deg, var(--success-green), #20c997);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-save:hover {
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+}
+
+.btn-cancel {
+    background: var(--light-gray);
+    border: 2px solid var(--medium-gray);
+    border-radius: 8px;
+    color: var(--dark-navy);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-cancel:hover {
+    background: var(--medium-gray);
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* ===== RESIDENT LIST STYLES ===== */
+
+.resident-list-container {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.resident-list-header {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-navy));
+    color: var(--white);
+    padding: 1.5rem 2rem;
+}
+
+.resident-list-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.resident-list-header p {
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+.resident-filters {
+    background: var(--light-gray);
+    border-bottom: 1px solid #dee2e6;
+    padding: 1.5rem 2rem;
+}
+
+.resident-filters .form-row {
+    align-items: end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.resident-table {
+    margin-bottom: 0;
+}
+
+.resident-table th {
+    background: var(--light-gray);
+    border-bottom: 2px solid #dee2e6;
+    color: var(--dark-navy);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.resident-table td {
+    border-bottom: 1px solid #dee2e6;
+    color: var(--dark-navy);
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.resident-table tbody tr:hover {
+    background: rgba(3, 89, 182, 0.05);
+}
+
+.resident-avatar {
+    border-radius: 50%;
+    height: 40px;
+    object-fit: cover;
+    width: 40px;
+}
+
+.resident-name {
+    color: var(--dark-navy);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.resident-name:hover {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.resident-purok {
+    background: var(--primary-blue);
+    border-radius: 20px;
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+}
+
+.resident-status {
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+}
+
+.resident-status.active {
+    background: rgba(40, 167, 69, 0.1);
+    color: var(--success-green);
+}
+
+.resident-status.inactive {
+    background: rgba(220, 53, 69, 0.1);
+    color: var(--danger-red);
+}
+
+.resident-actions-cell {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-action {
+    border: none;
+    border-radius: 6px;
+    color: var(--white);
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-action:hover {
+    color: var(--white);
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.btn-edit {
+    background: var(--warning-orange);
+}
+
+.btn-view {
+    background: var(--info-blue);
+}
+
+.btn-delete {
+    background: var(--danger-red);
+}
+
+/* ===== CENSUS STYLES ===== */
+
+.census-container {
+    background: linear-gradient(135deg, var(--success-green) 0%, #20c997 100%);
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.census-header {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.census-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.census-stat-card {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.census-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.census-chart-container {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.census-chart-header {
+    border-bottom: 2px solid var(--light-gray);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.census-chart-header h3 {
+    color: var(--dark-navy);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.census-chart {
+    height: 400px;
+    margin-bottom: 2rem;
+}
+
+/* ===== BLOTTER STYLES ===== */
+
+.blotter-container {
+    background: linear-gradient(135deg, var(--warning-orange) 0%, #fd7e14 100%);
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.blotter-header {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.blotter-case-card {
+    background: var(--white);
+    border-left: 4px solid var(--warning-orange);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blotter-case-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.blotter-case-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.blotter-case-number {
+    background: var(--warning-orange);
+    border-radius: 20px;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+}
+
+.blotter-case-status {
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+}
+
+.blotter-case-status.pending {
+    background: rgba(255, 193, 7, 0.1);
+    color: var(--warning-orange);
+}
+
+.blotter-case-status.investigation {
+    background: rgba(23, 162, 184, 0.1);
+    color: var(--info-blue);
+}
+
+.blotter-case-status.mediation {
+    background: rgba(40, 167, 69, 0.1);
+    color: var(--success-green);
+}
+
+.blotter-case-status.resolved {
+    background: rgba(40, 167, 69, 0.1);
+    color: var(--success-green);
+}
+
+.blotter-case-status.dismissed {
+    background: rgba(220, 53, 69, 0.1);
+    color: var(--danger-red);
+}
+
+.blotter-case-details {
+    margin-bottom: 1rem;
+}
+
+.blotter-case-details h4 {
+    color: var(--dark-navy);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.blotter-case-info {
+    color: var(--medium-gray);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.blotter-case-description {
+    color: var(--dark-navy);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.blotter-case-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+/* ===== HEALTH RECORDS STYLES ===== */
+
+.health-container {
+    background: linear-gradient(135deg, var(--info-blue) 0%, #17a2b8 100%);
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.health-header {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.health-record-card {
+    background: var(--white);
+    border-left: 4px solid var(--info-blue);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.health-record-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.health-record-type {
+    background: var(--info-blue);
+    border-radius: 20px;
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+}
+
+.health-alert {
+    background: rgba(220, 53, 69, 0.1);
+    border: 1px solid var(--danger-red);
+    border-radius: 8px;
+    color: var(--danger-red);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.health-immunization-card {
+    background: var(--white);
+    border: 2px solid var(--success-green);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.health-immunization-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.immunization-due {
+    background: rgba(255, 193, 7, 0.1);
+    border-color: var(--warning-orange);
+}
+
+/* ===== ANALYTICS STYLES ===== */
+
+.analytics-container {
+    background: linear-gradient(135deg, var(--dark-navy) 0%, #2c3e50 100%);
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.analytics-header {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.analytics-chart-container {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.analytics-chart {
+    height: 400px;
+    margin-bottom: 2rem;
+}
+
+.analytics-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.analytics-summary-card {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.analytics-summary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== EXPORT STYLES ===== */
+
+.export-container {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.export-header {
+    border-bottom: 2px solid var(--light-gray);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.export-header h3 {
+    color: var(--dark-navy);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.export-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.export-option {
+    background: var(--light-gray);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: var(--dark-navy);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.export-option:hover {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.export-option.selected {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.export-filters {
+    background: var(--light-gray);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.export-filters h4 {
+    color: var(--dark-navy);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.export-filters .form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+@media (max-width: 768px) {
+    .resident-stats,
+    .census-stats,
+    .analytics-summary {
+        grid-template-columns: 1fr;
+    }
+    
+    .resident-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .resident-filters .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .resident-actions-cell {
+        flex-direction: column;
+    }
+    
+    .blotter-case-actions {
+        flex-direction: column;
+    }
+    
+    .export-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .export-filters .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .resident-header h1 {
+        font-size: 2rem;
+    }
+    
+    .resident-stat-number {
+        font-size: 2rem;
+    }
+    
+    .resident-action-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .census-chart {
+        height: 300px;
+    }
+    
+    .analytics-chart {
+        height: 300px;
+    }
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+}
+
+/* ===== LOADING STATES ===== */
+
+.loading-spinner {
+    align-items: center;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+    border: 4px solid var(--light-gray);
+    border-radius: 50%;
+    border-top: 4px solid var(--primary-blue);
+    height: 40px;
+    width: 40px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ===== PRINT STYLES ===== */
+
+@media print {
+    .resident-management,
+    .census-container,
+    .blotter-container,
+    .health-container,
+    .analytics-container {
+        background: var(--white) !important;
+        padding-top: 0 !important;
+    }
+    
+    .resident-header,
+    .census-header,
+    .blotter-header,
+    .health-header,
+    .analytics-header {
+        box-shadow: none !important;
+    }
+    
+    .resident-actions,
+    .blotter-case-actions,
+    .health-record-actions {
+        display: none !important;
+    }
+    
+    .resident-stat-card,
+    .census-stat-card,
+    .blotter-case-card,
+    .health-record-card,
+    .analytics-summary-card {
+        box-shadow: none !important;
+        border: 1px solid #dee2e6 !important;
+    }
+} 
