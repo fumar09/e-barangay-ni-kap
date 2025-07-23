@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>e-Barangay ni Kap - Official Website | Barangay San Joaquin, Palo, Leyte</title>
+    <meta name="title" content="e-Barangay ni Kap - Official Website | Barangay San Joaquin, Palo, Leyte">
+    <meta name="description" content="Official website of Barangay San Joaquin, Palo, Leyte. Access barangay services, certificate requests, announcements, and community information. Modern e-governance platform for residents.">
+    <meta name="keywords" content="barangay san joaquin, palo leyte, barangay services, certificate request, barangay clearance, indigency certificate, residency certificate, business permit, e-governance, local government">
+    <meta name="author" content="Barangay San Joaquin Administration">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ebarangay-ni-kap.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ebarangay-ni-kap.com/">
+    <meta property="og:title" content="e-Barangay ni Kap - Official Website | Barangay San Joaquin, Palo, Leyte">
+    <meta property="og:description" content="Official website of Barangay San Joaquin, Palo, Leyte. Access barangay services, certificate requests, announcements, and community information.">
+    <meta property="og:image" content="https://ebarangay-ni-kap.com/assets/images/sjlg.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="e-Barangay ni Kap">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ebarangay-ni-kap.com/">
+    <meta property="twitter:title" content="e-Barangay ni Kap - Official Website | Barangay San Joaquin, Palo, Leyte">
+    <meta property="twitter:description" content="Official website of Barangay San Joaquin, Palo, Leyte. Access barangay services, certificate requests, announcements, and community information.">
+    <meta property="twitter:image" content="https://ebarangay-ni-kap.com/assets/images/sjlg.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="geo.region" content="PH-LEY">
+    <meta name="geo.placename" content="Palo, Leyte">
+    <meta name="geo.position" content="11.1575;124.9908">
+    <meta name="ICBM" content="11.1575, 124.9908">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <img src="assets/images/sjlg.png" alt="Barangay Logo" class="loading-logo">
+            <h2>e-Barangay ni Kap</h2>
+            <p>Loading...</p>
+            <div class="loading-progress">
+                <div class="loading-bar" id="loadingBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/sjlg.png" alt="Barangay Logo" class="me-2">
+                e-Barangay ni Kap
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" data-bs-toggle="tooltip" title="Home">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-bs-toggle="tooltip" title="About Us">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#map" data-bs-toggle="tooltip" title="Location Map">
+                            <i class="fas fa-map-marker-alt"></i> Map
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/services.php" data-bs-toggle="tooltip" title="Our Services">
+                            <i class="fas fa-cogs"></i> Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="auth/login.php" data-bs-toggle="tooltip" title="Login to Portal">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">e-Barangay ni Kap</h1>
+                <p class="slide-in-left">Comprehensive Barangay Management and Service Platform</p>
+                <p class="slide-in-right">San Joaquin, Palo, Leyte</p>
+                <div class="mt-4">
+                    <a href="auth/login.php" class="btn btn-primary me-3" data-bs-toggle="tooltip" title="Access the Portal">
+                        <i class="fas fa-sign-in-alt"></i> Enter Portal
+                    </a>
+                    <a href="about.html" class="btn btn-secondary" data-bs-toggle="tooltip" title="Learn More About Us">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Statistics -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="text-dark-navy">Community Statistics</h2>
+                    <p class="text-medium-gray">Barangay San Joaquin at a Glance</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="2844">0</div>
+                        <div class="stat-label">Population (2020 Census)</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="688">0</div>
+                        <div class="stat-label">Households</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Puroks</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="24">0</div>
+                        <div class="stat-label">Hours Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="text-dark-navy">Quick Access</h2>
+                    <p class="text-medium-gray">Get to what you need quickly</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="pages/announcements.php" class="quick-link-item" data-bs-toggle="tooltip" title="View Latest Announcements">
+                        <div class="quick-link-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h5>Announcements</h5>
+                        <p>Stay updated with barangay news</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="events.php" class="quick-link-item" data-bs-toggle="tooltip" title="View Community Events">
+                        <div class="quick-link-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h5>Events</h5>
+                        <p>Community activities and schedules</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="pages/services.php" class="quick-link-item" data-bs-toggle="tooltip" title="Available Services">
+                        <div class="quick-link-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h5>Services</h5>
+                        <p>Barangay services and assistance</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="contact.php" class="quick-link-item" data-bs-toggle="tooltip" title="Contact Information">
+                        <div class="quick-link-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5>Contact</h5>
+                        <p>Get in touch with us</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="text-dark-navy mb-4">About Barangay San Joaquin</h2>
+                    <div class="about-content">
+                        <p>Barangay San Joaquin is a vibrant community located in the municipality of Palo, Leyte, Philippines. We are committed to providing excellent public service and fostering a strong, united community.</p>
+                        <p>Our barangay is dedicated to digital transformation, making government services more accessible and efficient for all residents through our e-Barangay platform.</p>
+                        <a href="about.html" class="btn btn-primary mt-3" data-bs-toggle="tooltip" title="Lern More About Us">
+                            <i class="fas fa-arrow-right"></i> Learn More
+                          </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="neumorphism">
+                        <img src="assets/images/sjbg.jpg" alt="Barangay San Joaquin" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="text-dark-navy">Our Location</h2>
+                    <p class="text-medium-gray">Find us in Palo, Leyte</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.1234567890123!2d124.987654321!3d11.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDA3JzM0LjQiTiAxMjTCsDU5JzE1LjYiRQ!5e0!3m2!1sen!2sph!4v1234567890123"
+                            width="100%" 
+                            height="450" 
+                            class="border-0" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>e-Barangay ni Kap</h5>
+                    <p>Comprehensive Barangay Management and Service Platform for San Joaquin, Palo, Leyte.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/19QPMaXYPZ/" target="_blank" data-bs-toggle="tooltip" title="Follow us on Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-phone me-2"></i> +63961 225 3924</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 42P4+QHM, San Joaquin, Palo, Leyte</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@ebarangay.com</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" data-bs-toggle="tooltip" title="Go to Homepage"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
+                        <li><a href="about.html" data-bs-toggle="tooltip" title="Learn more about us"><i class="fas fa-chevron-right me-2"></i>About Us</a></li>
+                        <li><a href="pages/services.php" data-bs-toggle="tooltip" title="Explore our services"><i class="fas fa-chevron-right me-2"></i>Services</a></li>
+                        <li><a href="pages/announcements.php" data-bs-toggle="tooltip" title="Stay updated with our announcements"><i class="fas fa-chevron-right me-2"></i>Announcements</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 e-Barangay ni Kap. All rights reserved. | Barangay San Joaquin, Palo, Leyte</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" data-bs-toggle="tooltip" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "GovernmentOrganization",
+        "name": "Barangay San Joaquin",
+        "alternateName": "e-Barangay ni Kap",
+        "description": "Official website of Barangay San Joaquin, Palo, Leyte. Modern e-governance platform providing barangay services and community information.",
+        "url": "https://ebarangay-ni-kap.com",
+        "logo": "https://ebarangay-ni-kap.com/assets/images/sjlg.png",
+        "image": "https://ebarangay-ni-kap.com/assets/images/sjbg.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Barangay San Joaquin",
+            "addressLocality": "Palo",
+            "addressRegion": "Leyte",
+            "addressCountry": "PH"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 11.1575,
+            "longitude": 124.9908
+        },
+        "telephone": "+63961 225 3924",
+        "email": "info@ebarangay-ni-kap.com",
+        "sameAs": [
+            "https://www.facebook.com/share/19QPMaXYPZ/"
+        ],
+        "serviceArea": {
+            "@type": "City",
+            "name": "Palo, Leyte"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Barangay Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Barangay Clearance"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Certificate of Indigency"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Certificate of Residency"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Business Permit"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        // Loading Animation
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            const loadingBar = document.getElementById('loadingBar');
+            let progress = 0;
+            
+            const interval = setInterval(() => {
+                progress += Math.random() * 15;
+                if (progress > 100) progress = 100;
+                
+                loadingBar.style.width = progress + '%';
+                
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        loadingScreen.classList.add('fade-out');
+                        setTimeout(() => {
+                            loadingScreen.style.display = 'none';
+                        }, 500);
+                    }, 500);
+                }
+            }, 100);
+        });
+
+        // Animate Statistics
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current).toLocaleString();
+                }, 20);
+            });
+        }
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    if (entry.target.classList.contains('stats-section')) {
+                        animateCounters();
+                    }
+                }
+            });
+        });
+
+        // Observe elements for animation
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .stats-section').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Scroll to Top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Tooltips are now initialized automatically via custom.js
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

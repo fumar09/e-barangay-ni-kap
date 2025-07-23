@@ -1,0 +1,51 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow private/admin areas
+Disallow: /admin/
+Disallow: /modules/admin/
+Disallow: /resident/
+Disallow: /staff/
+Disallow: /purok/
+Disallow: /includes/
+Disallow: /vendor/
+Disallow: /logs/
+Disallow: /backups/
+Disallow: /assets/uploads/
+Disallow: /assets/uploads/certificates/
+Disallow: /assets/uploads/documents/
+Disallow: /assets/uploads/photos/
+Disallow: /assets/uploads/temp/
+
+# Disallow authentication pages from indexing
+Disallow: /auth/login.php
+Disallow: /auth/register.php
+Disallow: /auth/forgot-password.php
+Disallow: /auth/logout.php
+
+# Disallow certificate request pages from indexing (require login)
+Disallow: /modules/certificates/request.php
+Disallow: /modules/certificates/track.php
+Disallow: /modules/admin/process-requests.php
+
+# Allow important pages
+Allow: /index.html
+Allow: /about.html
+Allow: /pages/services.php
+Allow: /pages/announcements.php
+
+# Sitemap location
+Sitemap: https://ebarangay-ni-kap.com/sitemap.xml
+
+# Crawl delay (optional - be respectful to server)
+Crawl-delay: 1 
